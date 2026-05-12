@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      "flex-layout.row#example-home",
+      "flex-layout.row#title-and-image",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
@@ -15,30 +15,33 @@
       "newsletter"
     ]
   },
-  /* Example of flex-layout.row#example-home-col1 */
-  "flex-layout.row#example-home": {
+  "flex-layout.row#title-and-image": {
+    "children": ["flex-layout.col#title-and-image"]
+  },
+  "flex-layout.col#title-and-image": {
     "children": [
-      "flex-layout.col#home-col1",
-      "flex-layout.col#home-col2"
-    ]
-  },
-  "flex-layout.col#home-col1": {
-    "children": ["rich-text#home-col1"]
-
-  },
-  "flex-layout.col#home-col2": {
-    "children": ["rich-text#home-col2"]
-  },
-  "rich-text#home-col1": {
+      "rich-text#title-and-image",
+      "image#title-and-image"
+    ],
     "props": {
-      "text": "## Summer 2025",
+      "horizontalAlign": "center",
+      "textAlign": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#title-and-image": {
+    "title": "Título de banner",
+    "props": {
+      "text": "## Notebook",
       "blockClass": "shelfTitle"
     }
   },
-  "rich-text#home-col2": {
+  "image#title-and-image": {
+    "title": "Imagem do Notebook",
     "props": {
-      "text": "## Summer 2026",
-      "blockClass": "shelfTitle"
+      "src": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/b771c489-eb7b-482e-8e44-ea8e084712e3___0b1986526e995540d980c01548e2a50b.png",
+      "alt": "Notebook",
+       "maxHeight": 300
     }
   },
 
