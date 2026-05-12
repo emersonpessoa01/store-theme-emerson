@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
+      "flex-layout.row#example-home",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
@@ -13,6 +14,32 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+  /* Example of flex-layout.row#example-home-col1 */
+  "flex-layout.row#example-home": {
+    "children": [
+      "flex-layout.col#home-col1",
+      "flex-layout.col#home-col2"
+    ]
+  },
+  "flex-layout.col#home-col1": {
+    "children": ["rich-text#home-col1"]
+
+  },
+  "flex-layout.col#home-col2": {
+    "children": ["rich-text#home-col2"]
+  },
+  "rich-text#home-col1": {
+    "props": {
+      "text": "## Summer 2025",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#home-col2": {
+    "props": {
+      "text": "## Summer 2026",
+      "blockClass": "shelfTitle"
+    }
   },
 
   "list-context.image-list#demo": {
