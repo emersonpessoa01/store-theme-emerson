@@ -39,9 +39,9 @@
   "image#title-and-image": {
     "title": "Imagem do Notebook",
     "props": {
-      "src": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/b771c489-eb7b-482e-8e44-ea8e084712e3___0b1986526e995540d980c01548e2a50b.png",
+      "src": "assets/image/notebook.webp",
       "alt": "Notebook",
-       "maxHeight": 300
+      "maxHeight": 300
     }
   },
 
