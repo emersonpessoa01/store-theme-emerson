@@ -1,6 +1,6 @@
 {
   "vendor": "partnersigrowdev",
-  "name": "store-theme-emersonpessoadev",
+  "name": "store-theme-emerson",
   "version": "0.0.0",
   "builders": {
     "styles": "2.x",

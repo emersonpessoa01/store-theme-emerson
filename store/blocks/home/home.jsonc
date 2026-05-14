@@ -2,7 +2,8 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      "flex-layout.row#title-and-image",
+      // "flex-layout.row#title-and-image",
+      "flex-layout.row#section-1",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
@@ -15,35 +16,90 @@
       "newsletter"
     ]
   },
-  "flex-layout.row#title-and-image": {
-    "children": ["flex-layout.col#title-and-image"]
-  },
-  "flex-layout.col#title-and-image": {
+  /* Exemplo da primeira aula gravada */
+  // "flex-layout.row#title-and-image": {
+  //   "children": ["flex-layout.col#title-and-image"]
+  // },
+  // "flex-layout.col#title-and-image": {
+  //   "children": [
+  //     "rich-text#title-and-image",
+  //     "image#title-and-image"
+  //   ],
+  //   "props": {
+  //     "horizontalAlign": "center",
+  //     "textAlign": "CENTER",
+  //     "textPosition": "CENTER"
+  //   }
+  // },
+  // "rich-text#title-and-image": {
+  //   "title": "Título de banner",
+  //   "props": {
+  //     "text": "## Notebook Samsung",
+  //     "blockClass": "shelfTitle"
+  //   }
+  // },
+  // "image#title-and-image": {
+  //   "title": "Imagem do Notebook",
+  //   "props": {
+  //     "src": "assets/image/notebook.webp",
+  //     "alt": "Notebook",
+  //     "maxHeight": 300
+  //   }
+  // },
+  /* Exemplo da primeira aula online */
+  "flex-layout.row#section-1": {
+    "title": "Infos details",
     "children": [
-      "rich-text#title-and-image",
-      "image#title-and-image"
+      "flex-layout.col#container-image",
+      "flex-layout.col#container-text"
     ],
     "props": {
+      "blockClass": "row--section-1"
+    }
+  },
+  "flex-layout.col#container-image": {
+    "title": "Container Image",
+    "children": ["image#box-image"],
+    "props": {
       "horizontalAlign": "center",
-      "textAlign": "CENTER",
-      "textPosition": "CENTER"
+      "verticalAlign": "middle"
     }
   },
-  "rich-text#title-and-image": {
-    "title": "Título de banner",
+  "image#box-image": {
+    "title": "Image left",
     "props": {
-      "text": "## Notebook",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "image#title-and-image": {
-    "title": "Imagem do Notebook",
-    "props": {
-      "src": "assets/image/notebook.webp",
+      "src": "assets/image/sofa-blue.png",
       "alt": "Notebook",
-      "maxHeight": 300
+      "maxHeight": "300px"
     }
   },
+  "flex-layout.col#container-text": {
+    "title": "Container Text",
+    "children": [
+      "rich-text#box-text",
+      "rich-text#box-description"
+    ],
+    "props": {
+      "blockClass": "container--box-text"
+    }
+  },
+
+  "rich-text#box-text": {
+    "title": "Título da seção",
+    "props": {
+      "text": "## Notebook Samsung",
+      "blockClass": "box-text"
+    }
+  },
+ "rich-text#box-description": {
+    "title": "Descrição da seção",
+    "props": {
+      "text": "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus. Copo furadis é disculpa de bebadis, arcu quam euismod magna.  \n\n Si num tem leite então bota uma pinga aí cumpadi!Diuretics paradis num copo é motivis de denguis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Casamentiss faiz malandris se pirulitá. A ordem dos tratores não altera o pão duris.  \n\nNullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.",
+      "blockClass": "box-description"
+    }
+  },
+
+  /* Fim da aula online */
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -77,7 +133,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Verão 2026",
       "blockClass": "shelfTitle"
     }
   },
@@ -120,14 +176,14 @@
 
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "**Esta é uma loja de exemplo criada usando a plataforma VTEX. Quer saber mais?**\n\n**Entre em contato conosco em**\nwww.vtex.com.br",
       "blockClass": "question"
     }
   },
 
   "rich-text#link": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "text": "\n**Entre em contato conosco em**\nwww.vtex.com.br",
       "blockClass": "link"
     }
   }
