@@ -40,7 +40,10 @@
   border: none;
 }
 
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+.inputGroup
+  :global(
+    .vtex-styleguide-9-x-hideDecorators
+  )::placeholder {
   color: #fff;
   font-size: 16px;
 }
@@ -70,12 +73,14 @@
     padding: 140px;
   }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
-  .infoCardContainer--info-card-home .infoCardTextContainer {
+  .infoCardContainer--info-card-home
+    .infoCardTextContainer {
     width: 30%;
   }
-  .infoCardContainer--info-card-home .infoCardImageContainer {
+  .infoCardContainer--info-card-home
+    .infoCardImageContainer {
     width: 70%;
   }
   .imageElement--storePrint {
