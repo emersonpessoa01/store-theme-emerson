@@ -23,6 +23,11 @@
   display: block;
   width: 100%;
 }
+/* Ajustando tamanho do logo para o mobile */
+:global(.vtex-store-components-3-x-logoImage){
+  width: 21.5vh;
+  height: auto;
+}
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;
