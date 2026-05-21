@@ -28,6 +28,12 @@
   width: 21.5vh;
   height: auto;
 }
+.vtex-store-components-3-x-imageElement{
+  max-height: none;
+}
+ .vtex-flex-layout-0-x-flexRowContent {
+  gap: 1.5rem;
+}
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;
