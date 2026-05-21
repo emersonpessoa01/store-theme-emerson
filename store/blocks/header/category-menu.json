@@ -4,12 +4,12 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
+      "menu-item#category-smathphones",
       "menu-item#category-home",
       "menu-item#more"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#category-smathphones": {
     "props": {
       "id": "menu-item-category-apparel",
       "type": "custom",
@@ -17,52 +17,52 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/smathphones",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Smathphones",
+        "text": "Smathphones"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#category-smathphones"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#category-smathphones": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#category-smathphones"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#category-smathphones": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-smathphones-clothing",
+      "menu-item#category-smathphones-accessories",
+      "menu-item#category-smathphones-eyeglasses"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#category-smathphones-clothing": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-category-smathphones-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/samsng",
+        "href": "/samsung",
         "noFollow": false,
         "tagTitle": "Samsung",
         "text": "Samsung"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#category-smathphones-accessories": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-category-smathphones-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -75,9 +75,9 @@
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#category-smathphones-eyeglasses": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-category-smathphones-eyeglasses",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -153,7 +153,8 @@
     },
     "children": [
       "menu-item#about-us",
-      "menu-item#faq"
+      "menu-item#faq",
+      "menu-item#contact-us"
     ]
   },
   "menu-item#about-us": {
@@ -194,10 +195,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
+        "href": "/contato",
         "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Entre em contato",
+        "text": "Entre em contato"
       }
     }
   }
