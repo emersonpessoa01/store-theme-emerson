@@ -109,7 +109,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Growdev store &copy; 2026 - Todos os direitos reservados",
       "blockClass": "footer"
     }
   }
