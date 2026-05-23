@@ -5,88 +5,162 @@
     },
     "children": [
       "menu-item#category-smathphones",
+      "menu-item#category-notebooks",
       "menu-item#category-home",
       "menu-item#more"
     ]
   },
   "menu-item#category-smathphones": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-category-smathphones",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/smathphones",
+        "href": "/smartphones",
         "noFollow": false,
-        "tagTitle": "Smathphones",
-        "text": "Smathphones"
+        "tagTitle": "Smartphones",
+        "text": "Smartphones"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-smathphones"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#category-smathphones"]
+  },
+  "menu-item#category-notebooks": {
+    "props": {
+      "id": "menu-item-category-notebooks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks",
+        "noFollow": false,
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-notebooks"]
   },
   "vtex.menu@2.x:submenu#category-smathphones": {
     "props": {
       "width": "auto"
     },
-    "children": [
-      "vtex.menu@2.x:menu#category-smathphones"
-    ]
+    "children": ["vtex.menu@2.x:menu#category-smathphones"]
   },
   "vtex.menu@2.x:menu#category-smathphones": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-smathphones-clothing",
-      "menu-item#category-smathphones-accessories",
-      "menu-item#category-smathphones-eyeglasses"
+      "menu-item#category-smathphones-samsung",
+      "menu-item#category-smathphones-apple",
+      "menu-item#category-smathphones-motorola"
     ]
   },
-  "menu-item#category-smathphones-clothing": {
+  "menu-item#category-smathphones-samsung": {
     "props": {
-      "id": "menu-item-category-smathphones-clothing",
+      "id": "menu-item-category-smathphones-samsung",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/samsung",
+        "href": "/smartphones/samsung",
         "noFollow": false,
         "tagTitle": "Samsung",
         "text": "Samsung"
       }
     }
   },
-  "menu-item#category-smathphones-accessories": {
+  "menu-item#category-smathphones-apple": {
     "props": {
-      "id": "menu-item-category-smathphones-accessories",
+      "id": "menu-item-category-smathphones-apple",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apple/",
+        "href": "/smartphones/apple",
         "noFollow": false,
         "tagTitle": "Apple",
         "text": "Apple"
       }
     }
   },
-  "menu-item#category-smathphones-eyeglasses": {
+  "menu-item#category-smathphones-motorola": {
     "props": {
-      "id": "menu-item-category-smathphones-eyeglasses",
+      "id": "menu-item-category-smathphones-motorola",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/motorola",
+        "href": "/smartphones/motorola",
         "noFollow": false,
         "tagTitle": "Motorola",
         "text": "Motorola"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu#category-notebooks": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-notebooks"]
+  },
+  "vtex.menu@2.x:menu#category-notebooks": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-notebooks-acer",
+      "menu-item#category-notebooks-samsung",
+      "menu-item#category-notebooks-asus"
+    ]
+  },
+  "menu-item#category-notebooks-acer": {
+    "props": {
+      "id": "menu-item-category-notebooks-acer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks/acer",
+        "noFollow": false,
+        "tagTitle": "Acer",
+        "text": "Acer"
+      }
+    }
+  },
+  "menu-item#category-notebooks-samsung": {
+    "props": {
+      "id": "menu-item-category-notebooks-samsung",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks/samsung",
+        "noFollow": false,
+        "tagTitle": "Samsung",
+        "text": "Samsung"
+      }
+    }
+  },
+  "menu-item#category-notebooks-asus": {
+    "props": {
+      "id": "menu-item-category-notebooks-asus",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks/asus",
+        "noFollow": false,
+        "tagTitle": "Asus",
+        "text": "Asus"
       }
     }
   },
@@ -98,10 +172,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/notebook",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Notebooks",
-        "text": "Notebooks"
+        "tagTitle": "Home",
+        "text": "Home"
       }
     }
   },
@@ -119,17 +193,13 @@
         "text": "Institucional"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#more"]
   },
   "vtex.menu@2.x:submenu#more": {
     "props": {
       "width": "100%"
     },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
+    "children": ["flex-layout.row#menu-more"]
   },
   "flex-layout.row#menu-more": {
     "children": [
@@ -138,14 +208,10 @@
     ]
   },
   "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
+    "children": ["vtex.menu@2.x:menu#more"]
   },
   "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
+    "children": ["info-card#home"]
   },
   "vtex.menu@2.x:menu#more": {
     "props": {
